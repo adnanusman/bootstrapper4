@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-
-  <title>BootStrapper 4</title>
-
+    <meta charset="utf-8">
+    <title>BootStrapper 4</title>
+    <?php wp_head(); ?>
 </head>
     
 <body <?php body_class(); ?>>
       
     <header>
+        <p>This is just a random paragraph in the header</p>
     
         <section class="top-bar">
         
