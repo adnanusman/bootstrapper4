@@ -1,4 +1,14 @@
-.top-bar {
-    background: red;
-    height: 70px;
+.search {
+    background: #fff;
+    height: 30px;
+    border: 1px #222 solid;
+}
+
+.social-media-icons {
+    background: #222;
+    height: 30px;
+}
+
+.main-menu ul li {
+    display: inline;
 }
