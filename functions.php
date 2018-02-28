@@ -24,7 +24,8 @@ function bootstrapper_config() {
         'width' => 1920
     );
     add_theme_support( 'custom-header', $header_image);
-
+    add_theme_support( 'post-thumbnails' );
+    add_image_size( 'blog-thumbnail', 275, 275 ); 
 }
 
 add_action('after_setup_theme', 'bootstrapper_config', 0);
