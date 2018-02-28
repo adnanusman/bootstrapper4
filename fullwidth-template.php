@@ -5,6 +5,7 @@ Template Name: Full Width Template
 ?>
 
 <?php get_header(); ?>
+
     <div class="content-area">
         <main>
             <section="middle-area">

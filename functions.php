@@ -1,6 +1,5 @@
 <?php
 
-
 // Enqueue Styles and Scripts
 function load_scripts() {
     wp_enqueue_style( 'template', get_template_directory_uri() . '/css/template.css', array(), '1.0.0', 'all' );
@@ -10,10 +9,22 @@ function load_scripts() {
 
 add_action('wp_enqueue_scripts', 'load_scripts');
 
-// Enable the Menu
-register_nav_menus(
-    array(
-        'my_main_menu' => 'Main Menu',
-        'footer-menu' => 'Footer Menu'
-    )
-);
+// Main Configuration Function for Theme
+function bootstrapper_config() {
+    // Enable the Menu
+    register_nav_menus(
+        array(
+            'my_main_menu' => 'Main Menu',
+            'footer-menu' => 'Footer Menu'
+        )
+    );
+
+    $header_image = array (
+        'height' => 450,
+        'width' => 1920
+    );
+    add_theme_support( 'custom-header', $header_image);
+
+}
+
+add_action('after_setup_theme', 'bootstrapper_config', 0);
