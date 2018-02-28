@@ -13,6 +13,7 @@ add_action('wp_enqueue_scripts', 'load_scripts');
 // Enable the Menu
 register_nav_menus(
     array(
-        'my_main_menu' => 'Main Menu'
+        'my_main_menu' => 'Main Menu',
+        'footer-menu' => 'Footer Menu'
     )
 );
