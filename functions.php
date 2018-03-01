@@ -25,7 +25,10 @@ function bootstrapper_config() {
     );
     add_theme_support( 'custom-header', $header_image);
     add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'post-formats', array( 'image', 'video' ) );
+    
     add_image_size( 'blog-thumbnail', 275, 275 ); 
+    add_image_size( 'medium', 500, 334 );
 }
 
 add_action('after_setup_theme', 'bootstrapper_config', 0);
