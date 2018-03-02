@@ -2,7 +2,7 @@
     <div class="content-area">
         <main>
         
-            <section class="slider">
+            <!-- <section class="slider">
                 
                 <div class="container">
                     <div class="row text-center col-xs-12">
@@ -12,18 +12,8 @@
                     </div>
                 </div>
                 
-            </section>
-            <section class="services">
-                
-                <div class="container">
-                    <div class="row">
-                                
-                    Services
-                
-                    </div>
-                </div>    
-            </section>
-            
+            </section> -->
+           
             <section class="middle-area">
                 <div class="container">
                     <div class="row">

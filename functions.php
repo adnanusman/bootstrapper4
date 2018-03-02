@@ -32,3 +32,59 @@ function bootstrapper_config() {
 }
 
 add_action('after_setup_theme', 'bootstrapper_config', 0);
+
+add_action('widgets_init', 'bootstrapper_sidebars');
+
+function bootstrapper_sidebars() {
+    register_sidebar( array(
+        'name' => 'Home Sidebar',
+        'id' => 'home-sidebar',
+        'description' => 'Sidebar on homepage',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget' => '</div>',
+        'before_title' => '<p class="widget-title">',
+        'after_title' => '</p>'
+        )
+    );
+    register_sidebar( array(
+        'name' => 'Blog Sidebar',
+        'id' => 'blog-sidebar',
+        'description' => 'Sidebar on Blog Pages',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget' => '</div>',
+        'before_title' => '<p class="widget-title">',
+        'after_title' => '</p>'
+        )
+    );
+
+    register_sidebar( array(
+        'name' => 'Service Area 1',
+        'id' => 'service-area-1',
+        'description' => 'Service Areas',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget' => '</div>',
+        'before_title' => '<p class="service-area-title">',
+        'after_title' => '</p>'
+        )
+    );
+    register_sidebar( array(
+        'name' => 'Service Area 2',
+        'id' => 'service-area-2',
+        'description' => 'Service Areas',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget' => '</div>',
+        'before_title' => '<p class="service-area-title">',
+        'after_title' => '</p>'
+        )
+    );
+    register_sidebar( array(
+        'name' => 'Service Area 3',
+        'id' => 'service-area-3',
+        'description' => 'Service Areas',
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget' => '</div>',
+        'before_title' => '<p class="service-area-title">',
+        'after_title' => '</p>'
+        )
+    );
+}

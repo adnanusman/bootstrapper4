@@ -3,7 +3,7 @@
     <div class="content-area">
         <main>
         
-            <section class="slider">
+            <!-- <section class="slider">
                 
                 <div class="container">
                     <div class="row text-center col-xs-12">
@@ -13,13 +13,39 @@
                     </div>
                 </div>
                 
-            </section>
+            </section> -->
             <section class="services">
                 
                 <div class="container">
                     <div class="row">
                                 
-                    Services
+                    <div class="col-sm-4">
+                        <div class="services-item">
+                        <?php
+                            if(is_active_sidebar('service-area-1')) {
+                                dynamic_sidebar('service-area-1');
+                            }
+                        ?>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="services-item">
+                        <?php
+                            if(is_active_sidebar('service-area-2')) {
+                                dynamic_sidebar('service-area-2');
+                            }
+                        ?>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="services-item">
+                        <?php
+                            if(is_active_sidebar('service-area-3')) {
+                                dynamic_sidebar('service-area-3');
+                            }
+                        ?>
+                        </div>
+                    </div>
                 
                     </div>
                 </div>    
@@ -30,7 +56,7 @@
                     <div class="row">
                 
                 <aside class="sidebar col-md-3">
-                    Sidebar
+                    <?php get_sidebar('home'); ?>
                 </aside>
                 
                 <div class="news col-md-9">
