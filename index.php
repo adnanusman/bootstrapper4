@@ -19,7 +19,7 @@
                     <div class="row">
                 
                 <aside class="sidebar col-md-3">
-                    Sidebar
+                    <?php get_sidebar('blog'); ?>
                 </aside>
                 
                 <div class="news col-md-9">
