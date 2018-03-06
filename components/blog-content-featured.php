@@ -1,10 +1,12 @@
 <article <?php post_class( array ('class' => 'featured' )); ?>>
 
-    <h2><?php the_title(); ?></h2>
-        <?php // check if the post has a Post Thumbnail assigned to it.
+
+    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+    <a href="<?php the_permalink(); ?>"><?php // check if the post has a Post Thumbnail assigned to it.
         if ( has_post_thumbnail() ) {
             the_post_thumbnail( 'large', array( 'class' => 'img-fluid' )  );
-        } ?>
+        } ?></a>
 
     <div class="meta-info">
         <p>
