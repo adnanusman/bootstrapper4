@@ -71,7 +71,11 @@ if ( post_password_required() ) {
 	<?php
 		comment_form( array(
 			'title_reply_before' => '<p id="reply-title" class="comment-reply-title">',
-            'title_reply_after'  => '</p>',
+			'title_reply_after'  => '</p>',
+			'title_reply' => '',
+			'comment_field' => '<p class="comment-title">Got something to add? Leave a comment.</p>' . '<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>',
+			'logged_in_as' => '',
+			'label_submit' => 'Submit Comment',
 		) );
 	?>
 

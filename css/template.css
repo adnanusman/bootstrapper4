@@ -17,6 +17,22 @@ h4{ font-size: 18px; margin-top: 0; }
     margin-bottom: .5em;
 }
 
+.comment-title {
+    font-size: 22px;
+    line-height: 150%;
+    font-weight: 600;
+}
+
+#comment {
+    width: 100%;
+}
+
+#submit {
+    background: var(--blue);
+    color: var(--white);
+    padding: 10px;
+    font-weight: 600;
+}
 
 /* Top Bar Section */
 .top-bar{ background: #222; color: #fff; padding: 15px 0; }
