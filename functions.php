@@ -26,6 +26,7 @@ function bootstrapper_config() {
     add_theme_support( 'custom-header', $header_image);
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'post-formats', array( 'image', 'video' ) );
+    add_theme_support( 'title_tag' );
     
     add_image_size( 'blog-thumbnail', 275, 275 ); 
     add_image_size( 'medium', 500, 334 );
