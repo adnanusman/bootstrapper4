@@ -34,6 +34,14 @@
                     
                     // endwhile --- the first if condition is still active
                     endwhile;
+                    ?>
+
+                    <div class="row">
+                        <div class="pages col-6 text-left"><?php previous_posts_link("<< Newer Posts"); ?></div>
+                        <div class="pages col-6 text-right"><?php next_posts_link(">> Previous Posts"); ?></div>
+                    </div>
+
+                    <?php
                     // now the second condition begins, in case there are no posts
                     else:
                     ?>
