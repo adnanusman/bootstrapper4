@@ -22,7 +22,7 @@
                     <?php get_sidebar('blog'); ?>
                 </aside>
                 
-                <div class="archives col-md-9">
+                <div class="archive col-md-9">
                     
                     <?php
                     the_archive_title('<h1 class="archive-title">', '</h1>');
